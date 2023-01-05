@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "/iL9YkIyxRxcihAksGp8N3uyGcyQ9onavN72b/uGSF0jC/qQj0Mpvep2Dlnmbvr+A98RViagOAXl+WAjqizbtg==",
+  "success": true,
+  "projectFilePath": "/media/bakr/Bld/NET/Backend/Backend/Backend.csproj",
+  "expectedPackageFiles": [
+    "/home/bakr/.nuget/packages/microsoft.aspnetcore.openapi/7.0.1/microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
+    "/home/bakr/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/bakr/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/home/bakr/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/home/bakr/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/home/bakr/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/home/bakr/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
