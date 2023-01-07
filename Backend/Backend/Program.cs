@@ -1,12 +1,16 @@
+using Backend.Data;
+using Backend.Services.Clients;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddTransient<DataContext>();
+builder.Services.AddTransient<IClientService, ClientService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
