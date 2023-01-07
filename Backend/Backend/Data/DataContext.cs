@@ -1,6 +1,7 @@
 namespace Backend.Data;
 
 using Backend.Models.Clients;
+using Backend.Models.Sample;
 using Microsoft.EntityFrameworkCore;
 
 public class DataContext : DbContext
@@ -19,4 +20,5 @@ public class DataContext : DbContext
     }
 
     public DbSet<Clients> Clients { get; set; }
+    public DbSet<Sample> Samples { get; set; }
 }
