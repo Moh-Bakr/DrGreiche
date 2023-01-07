@@ -1,5 +1,6 @@
 using Backend.Data;
 using Backend.Services.Clients;
+using Backend.Services.Samples;
 
 var policyName = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<DataContext>();
 builder.Services.AddTransient<IClientService, ClientService>();
+builder.Services.AddTransient<ISampleService, SampleService>();
 
 
 var app = builder.Build();
