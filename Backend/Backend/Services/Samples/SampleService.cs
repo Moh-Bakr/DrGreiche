@@ -20,7 +20,12 @@ public class SampleService : ISampleService
     {
         return await _context.Samples.ToListAsync();
     }
-
+    
+     public async Task<IEnumerable<Sample>> SearchSampleByName(string name)
+    {
+        return await _context.Samples.Where(x => x.client_name.Contains(name)).ToListAsync();
+    }
+    
     public async Task<Sample> CreateSample(Sample sample)
     {
         _context.Samples.Add(sample);

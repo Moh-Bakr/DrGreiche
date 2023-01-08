@@ -19,9 +19,25 @@ public class ClientService : IClientService
     {
         return await _context.Clients.ToListAsync();
     }
+    
+    public async Task<Models.Clients.Clients> GetClientByCode(string code)
+    {
+        var client = await _context.Clients.FirstOrDefaultAsync(x => x.code == code);
+        if (client == null)
+        {
+            return null;
+        }
 
+        return client;
+    }
+    
     public async Task<Models.Clients.Clients> CreateClient(Models.Clients.Clients client)
     {
+        var clientExists = await _context.Clients.FirstOrDefaultAsync(x => x.code == client.code);
+        if (clientExists != null)
+        {
+            return null;
+        }
         _context.Clients.Add(client);
         await _context.SaveChangesAsync();
         return client;
