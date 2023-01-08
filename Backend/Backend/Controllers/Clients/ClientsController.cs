@@ -42,6 +42,11 @@ public class ClientController : ControllerBase
     public async Task<ActionResult<Models.Clients.Clients>> CreateClient(Models.Clients.Clients client)
     {
         var result = await _clientService.CreateClient(client);
+        if (result == null)
+        {
+            return BadRequest("Clients with this code already exists");
+        }
+        
         return Ok(result);
     }
 
