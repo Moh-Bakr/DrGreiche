@@ -33,7 +33,7 @@ public class SampleController : ControllerBase
         var data = await _sampleService.SearchSampleByName(name);
         if (data == null)
         {
-            return NotFound($"Sample {name} not found");
+            return NotFound("No sample with this name");
         }
 
         return Ok(data);
