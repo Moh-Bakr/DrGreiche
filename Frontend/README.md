@@ -3,7 +3,7 @@
 ## Website URL
 
 ```
-https://drgreiche.netlify.app/samples
+https://drgreiche.netlify.app
 ```
 ![Alt text](README/Getsample.png?raw=true)
 
