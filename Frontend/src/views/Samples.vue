@@ -13,6 +13,7 @@
         <th>جهة الاستلام</th>
         <th>تاريخ الاستلام</th>
         <th>وصف العينة</th>
+        <th>قيمة العينة</th>
         <th>عدد العينات</th>
         <th>حالة العينة</th>
         <th></th>
@@ -22,6 +23,7 @@
         <td>{{ sample.receiving_party }}</td>
         <td>{{ sample.date }}</td>
         <td>{{ sample.description }}</td>
+        <td>{{ sample.price }}</td>
         <td>{{ sample.qutaity }}</td>
         <td>
           <div class="flexify">

@@ -1,24 +1,23 @@
-# gresh
+# DrGreiche
 
-## Project setup
-```
-npm install
-```
+## Website URL
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
+https://drgreiche.netlify.app/samples
 ```
+![Alt text](README/Getsample.png?raw=true)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+![Alt text](README/aadsample.png?raw=true)
 
-### Lints and fixes files
-```
-npm run lint
-```
+![Alt text](README/editsample.png?raw=true)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+![Alt text](README/Getclient.png?raw=true)
+
+![Alt text](README/searchclient.png?raw=true)
+
+![Alt text](README/addclient.png?raw=true)
+
+![Alt text](README/editclient.png?raw=true)
+
+
